@@ -1,4 +1,6 @@
-# L12GR05 - BERZERK
+# BERZERK
+
+- **Used Programming Languages:** Java
 
 ## GAME DESCRIPTION
 > 
