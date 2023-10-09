@@ -9,15 +9,6 @@
 > 
 &nbsp;
 
-### GROUP COMPOSITION:
-> 
-> **This project was developed by:**
-> - > Mansur (up202102355@up.pt)
-> - > Ian Beltrão (up202102360@up.pt)
-> - > Rafael Teixeira (up202108831@up.pt)
-> 
-&nbsp;
-
 ## IMPLEMENTED FEATURES
 > 
 > - `MENU` - When the game is initialized, a menu containing the options Play, LeaderBoard, Instructions and Exit is displayed
@@ -94,10 +85,3 @@ We used 9 different PNG's to create the Boss, that combined looks like this:
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![](https://github.com/FEUP-LDTS-2022/project-l12gr05/blob/master/docs/Gifs/Boss%20Level.gif)
 >
 &nbsp;
-
-### SELF-EVALUATION
-> 
-> Mansur: 33.3%</br>
-> Ian: 33.3%</br>
-> Rafael: 33.3%</br>
-> 
