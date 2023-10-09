@@ -1,0 +1,42 @@
+plugins {
+    id 'java'
+    id 'groovy'
+    id 'application'
+    id 'info.solidsoft.pitest' version '1.6.0'
+    id "org.kordamp.gradle.errorprone" version "0.47.0"
+}
+
+group 'com.l12gr05.projeto'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.google.guava:guava:31.1-jre'
+    testImplementation 'org.mockito:mockito-core:4.10.0'
+    implementation 'org.codehaus.groovy:groovy-all:3.0.13'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.0'
+    testImplementation 'org.spockframework:spock-core:2.3-groovy-3.0'
+    testImplementation 'org.codehaus.groovy:groovy-all:3.0.13'
+    implementation group: 'com.googlecode.lanterna', name: 'lanterna', version: '3.1.1'
+}
+
+
+test {
+    useJUnitPlatform()
+}
+
+pitest {
+    junit5PluginVersion = '0.12'
+    pitestVersion = '1.6.7'
+    verbose = true
+    excludedClasses = ['com.l12gr05.projeto.Application']
+    excludedTestClasses = ['com.l12gr05.projeto.GameTest']
+}
+
+mainClassName = 'com.l12gr05.projeto.Application'
+
+

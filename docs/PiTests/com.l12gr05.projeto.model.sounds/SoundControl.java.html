@@ -1,0 +1,1749 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+
+
+<h1>SoundControl.java</h1>
+
+<table class="src">
+
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_1'/>
+1
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_1'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>package com.l12gr05.projeto.model.sounds;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_2'/>
+2
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_2'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_3'/>
+3
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_3'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>public class SoundControl {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_4'/>
+4
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_4'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    private SoundTrack soundTrack;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_5'/>
+5
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_5'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    private SoundTrack shooting;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_6'/>
+6
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_6'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    private SoundTrack menuMusic;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_7'/>
+7
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_7'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    private SoundTrack heroDeath;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_8'/>
+8
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_8'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    private SoundTrack enemyDeath;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_9'/>
+9
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_9'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    private SoundTrack changeTab;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_10'/>
+10
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_10'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    private static SoundControl soundControl;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_11'/>
+11
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_11'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_12'/>
+12
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_12'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    private SoundControl() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_13'/>
+13
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_13'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        soundTrack = new SoundTrack(&#34;/src/main/resources/Sounds/soundTrack.wav&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_14'/>
+14
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_14'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        shooting = new SoundTrack(&#34;/src/main/resources/Sounds/Shooting.wav&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_15'/>
+15
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_15'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        menuMusic = new SoundTrack(&#34;/src/main/resources/Sounds/MenuMusic.wav&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_16'/>
+16
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_16'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        heroDeath = new SoundTrack(&#34;/src/main/resources/Sounds/HeroDeath.wav&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_17'/>
+17
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_17'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        enemyDeath = new SoundTrack(&#34;/src/main/resources/Sounds/EnemyDeath.wav&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_18'/>
+18
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_18'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        changeTab = new SoundTrack(&#34;/src/main/resources/Sounds/ChangeTab.wav&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_19'/>
+19
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_19'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_20'/>
+20
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_20'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_21'/>
+21
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_21'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    public void setSoundTrack(SoundTrack soundTrack) {this.soundTrack = soundTrack;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_22'/>
+22
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_22'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_23'/>
+23
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_23'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    public void setShooting(SoundTrack shooting) {this.shooting = shooting;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_24'/>
+24
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_24'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_25'/>
+25
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_25'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    public void setMenuMusic(SoundTrack menuMusic) {this.menuMusic = menuMusic;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_26'/>
+26
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_26'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_27'/>
+27
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_27'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    public void setHeroDeath(SoundTrack heroDeath) {this.heroDeath = heroDeath;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_28'/>
+28
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_28'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_29'/>
+29
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_29'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    public void setEnemyDeath(SoundTrack enemyDeath) {this.enemyDeath = enemyDeath;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_30'/>
+30
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_30'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_31'/>
+31
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_31'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    public void setChangeTab(SoundTrack changeTab) {this.changeTab = changeTab;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_32'/>
+32
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_32'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_33'/>
+33
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_33'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public static SoundControl getInstance() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_34'/>
+34
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_34'>1</a>
+<span>
+
+1. getInstance : negated conditional &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        if (soundControl == null) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_35'/>
+35
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_35'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            soundControl = new SoundControl();</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_36'/>
+36
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_36'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_37'/>
+37
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_37'>1</a>
+<span>
+
+1. getInstance : replaced return value with null for com/l12gr05/projeto/model/sounds/SoundControl::getInstance &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return soundControl;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_38'/>
+38
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_38'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_39'/>
+39
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_39'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_40'/>
+40
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_40'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public void start(Sound sound) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_41'/>
+41
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_41'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        switch (sound){</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_42'/>
+42
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_42'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            case SOUNDTRACK:</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_43'/>
+43
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_43'>1</a>
+<span>
+
+1. start : removed call to com/l12gr05/projeto/model/sounds/SoundTrack::playLoop &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>                soundTrack.playLoop();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_44'/>
+44
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_44'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>                break;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_45'/>
+45
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_45'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            case SHOOTING:</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_46'/>
+46
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_46'>1</a>
+<span>
+
+1. start : removed call to com/l12gr05/projeto/model/sounds/SoundTrack::play &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>                shooting.play();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_47'/>
+47
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_47'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>                break;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_48'/>
+48
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_48'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            case MENUMUSIC:</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_49'/>
+49
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_49'>1</a>
+<span>
+
+1. start : removed call to com/l12gr05/projeto/model/sounds/SoundTrack::playLoop &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>                menuMusic.playLoop();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_50'/>
+50
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_50'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>                break;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_51'/>
+51
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_51'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            case HERODEATH:</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_52'/>
+52
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_52'>1</a>
+<span>
+
+1. start : removed call to com/l12gr05/projeto/model/sounds/SoundTrack::play &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>                heroDeath.play();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_53'/>
+53
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_53'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>                break;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_54'/>
+54
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_54'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            case ENEMYDEATH:</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_55'/>
+55
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_55'>1</a>
+<span>
+
+1. start : removed call to com/l12gr05/projeto/model/sounds/SoundTrack::play &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>                enemyDeath.play();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_56'/>
+56
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_56'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>                break;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_57'/>
+57
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_57'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            case CHANGETAB:</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_58'/>
+58
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_58'>1</a>
+<span>
+
+1. start : removed call to com/l12gr05/projeto/model/sounds/SoundTrack::play &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>                changeTab.play();</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_59'/>
+59
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_59'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>                break;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_60'/>
+60
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_60'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_61'/>
+61
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_61'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_62'/>
+62
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_62'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_63'/>
+63
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_63'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public void stop(Sound sound){</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_64'/>
+64
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_64'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        switch (sound){</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_65'/>
+65
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_65'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            case SOUNDTRACK:</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_66'/>
+66
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_66'>1</a>
+<span>
+
+1. stop : removed call to com/l12gr05/projeto/model/sounds/SoundTrack::stop &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>                soundTrack.stop();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_67'/>
+67
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_67'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>                break;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_68'/>
+68
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_68'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            case SHOOTING:</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_69'/>
+69
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_69'>1</a>
+<span>
+
+1. stop : removed call to com/l12gr05/projeto/model/sounds/SoundTrack::stop &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>                shooting.stop();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_70'/>
+70
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_70'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>                break;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_71'/>
+71
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_71'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            case MENUMUSIC:</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_72'/>
+72
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_72'>1</a>
+<span>
+
+1. stop : removed call to com/l12gr05/projeto/model/sounds/SoundTrack::stop &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>                menuMusic.stop();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_73'/>
+73
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_73'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>                break;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_74'/>
+74
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_74'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            case HERODEATH:</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_75'/>
+75
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_75'>1</a>
+<span>
+
+1. stop : removed call to com/l12gr05/projeto/model/sounds/SoundTrack::stop &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>                heroDeath.stop();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_76'/>
+76
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_76'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>                break;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_77'/>
+77
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_77'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            case ENEMYDEATH:</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_78'/>
+78
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_78'>1</a>
+<span>
+
+1. stop : removed call to com/l12gr05/projeto/model/sounds/SoundTrack::stop &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>                enemyDeath.stop();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_79'/>
+79
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_79'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>                break;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_80'/>
+80
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_80'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            case CHANGETAB:</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_81'/>
+81
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_81'>1</a>
+<span>
+
+1. stop : removed call to com/l12gr05/projeto/model/sounds/SoundTrack::stop &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>                changeTab.stop();</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_82'/>
+82
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_82'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>                break;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_83'/>
+83
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_83'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_84'/>
+84
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_84'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_85'/>
+85
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_85'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_86'/>
+86
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_86'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public void stopAll(){</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_87'/>
+87
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_87'>1</a>
+<span>
+
+1. stopAll : removed call to com/l12gr05/projeto/model/sounds/SoundTrack::stop &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        soundTrack.stop();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_88'/>
+88
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_88'>1</a>
+<span>
+
+1. stopAll : removed call to com/l12gr05/projeto/model/sounds/SoundTrack::stop &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        shooting.stop();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_89'/>
+89
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_89'>1</a>
+<span>
+
+1. stopAll : removed call to com/l12gr05/projeto/model/sounds/SoundTrack::stop &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        menuMusic.stop();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_90'/>
+90
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_90'>1</a>
+<span>
+
+1. stopAll : removed call to com/l12gr05/projeto/model/sounds/SoundTrack::stop &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        heroDeath.stop();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_91'/>
+91
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_91'>1</a>
+<span>
+
+1. stopAll : removed call to com/l12gr05/projeto/model/sounds/SoundTrack::stop &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        enemyDeath.stop();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_92'/>
+92
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_92'>1</a>
+<span>
+
+1. stopAll : removed call to com/l12gr05/projeto/model/sounds/SoundTrack::stop &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        changeTab.stop();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_93'/>
+93
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_93'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e08853d_94'/>
+94
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_94'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>}</span></pre></td></tr>
+
+
+
+<tr><td></td><td></td><td><h2>Mutations</h2></td></tr>
+
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@e08853d_34'>34</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_34'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getInstance<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@e08853d_37'>37</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_37'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getInstance<br/><b>Killed by : </b>com.l12gr05.projeto.model.sounds.SoundControlTest.[engine:spock]/[spec:com.l12gr05.projeto.model.sounds.SoundControlTest]/[feature:$spock_feature_0_12]</span></span> replaced return value with null for com/l12gr05/projeto/model/sounds/SoundControl::getInstance &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@e08853d_43'>43</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_43'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>start<br/><b>Killed by : </b>com.l12gr05.projeto.model.sounds.SoundControlTest.[engine:spock]/[spec:com.l12gr05.projeto.model.sounds.SoundControlTest]/[feature:$spock_feature_0_1]</span></span> removed call to com/l12gr05/projeto/model/sounds/SoundTrack::playLoop &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@e08853d_46'>46</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_46'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>start<br/><b>Killed by : </b>com.l12gr05.projeto.model.sounds.SoundControlTest.[engine:spock]/[spec:com.l12gr05.projeto.model.sounds.SoundControlTest]/[feature:$spock_feature_0_3]</span></span> removed call to com/l12gr05/projeto/model/sounds/SoundTrack::play &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@e08853d_49'>49</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_49'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>start<br/><b>Killed by : </b>com.l12gr05.projeto.model.sounds.SoundControlTest.[engine:spock]/[spec:com.l12gr05.projeto.model.sounds.SoundControlTest]/[feature:$spock_feature_0_2]</span></span> removed call to com/l12gr05/projeto/model/sounds/SoundTrack::playLoop &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@e08853d_52'>52</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_52'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>start<br/><b>Killed by : </b>com.l12gr05.projeto.model.sounds.SoundControlTest.[engine:spock]/[spec:com.l12gr05.projeto.model.sounds.SoundControlTest]/[feature:$spock_feature_0_4]</span></span> removed call to com/l12gr05/projeto/model/sounds/SoundTrack::play &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@e08853d_55'>55</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_55'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>start<br/><b>Killed by : </b>com.l12gr05.projeto.model.sounds.SoundControlTest.[engine:spock]/[spec:com.l12gr05.projeto.model.sounds.SoundControlTest]/[feature:$spock_feature_0_5]</span></span> removed call to com/l12gr05/projeto/model/sounds/SoundTrack::play &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@e08853d_58'>58</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_58'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>start<br/><b>Killed by : </b>com.l12gr05.projeto.model.sounds.SoundControlTest.[engine:spock]/[spec:com.l12gr05.projeto.model.sounds.SoundControlTest]/[feature:$spock_feature_0_6]</span></span> removed call to com/l12gr05/projeto/model/sounds/SoundTrack::play &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@e08853d_66'>66</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_66'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>stop<br/><b>Killed by : </b>com.l12gr05.projeto.model.sounds.SoundControlTest.[engine:spock]/[spec:com.l12gr05.projeto.model.sounds.SoundControlTest]/[feature:$spock_feature_0_7]</span></span> removed call to com/l12gr05/projeto/model/sounds/SoundTrack::stop &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@e08853d_69'>69</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_69'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>stop<br/><b>Killed by : </b>com.l12gr05.projeto.model.sounds.SoundControlTest.[engine:spock]/[spec:com.l12gr05.projeto.model.sounds.SoundControlTest]/[feature:$spock_feature_0_9]</span></span> removed call to com/l12gr05/projeto/model/sounds/SoundTrack::stop &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@e08853d_72'>72</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_72'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>stop<br/><b>Killed by : </b>com.l12gr05.projeto.model.sounds.SoundControlTest.[engine:spock]/[spec:com.l12gr05.projeto.model.sounds.SoundControlTest]/[feature:$spock_feature_0_8]</span></span> removed call to com/l12gr05/projeto/model/sounds/SoundTrack::stop &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@e08853d_75'>75</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_75'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>stop<br/><b>Killed by : </b>com.l12gr05.projeto.model.sounds.SoundControlTest.[engine:spock]/[spec:com.l12gr05.projeto.model.sounds.SoundControlTest]/[feature:$spock_feature_0_10]</span></span> removed call to com/l12gr05/projeto/model/sounds/SoundTrack::stop &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@e08853d_78'>78</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_78'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>stop<br/><b>Killed by : </b>com.l12gr05.projeto.model.sounds.SoundControlTest.[engine:spock]/[spec:com.l12gr05.projeto.model.sounds.SoundControlTest]/[feature:$spock_feature_0_11]</span></span> removed call to com/l12gr05/projeto/model/sounds/SoundTrack::stop &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@e08853d_81'>81</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_81'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>stop<br/><b>Killed by : </b>com.l12gr05.projeto.model.sounds.SoundControlTest.[engine:spock]/[spec:com.l12gr05.projeto.model.sounds.SoundControlTest]/[feature:$spock_feature_0_12]</span></span> removed call to com/l12gr05/projeto/model/sounds/SoundTrack::stop &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@e08853d_87'>87</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_87'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>stopAll<br/><b>Killed by : </b>com.l12gr05.projeto.model.sounds.SoundControlTest.[engine:spock]/[spec:com.l12gr05.projeto.model.sounds.SoundControlTest]/[feature:$spock_feature_0_13]</span></span> removed call to com/l12gr05/projeto/model/sounds/SoundTrack::stop &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@e08853d_88'>88</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_88'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>stopAll<br/><b>Killed by : </b>com.l12gr05.projeto.model.sounds.SoundControlTest.[engine:spock]/[spec:com.l12gr05.projeto.model.sounds.SoundControlTest]/[feature:$spock_feature_0_13]</span></span> removed call to com/l12gr05/projeto/model/sounds/SoundTrack::stop &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@e08853d_89'>89</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_89'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>stopAll<br/><b>Killed by : </b>com.l12gr05.projeto.model.sounds.SoundControlTest.[engine:spock]/[spec:com.l12gr05.projeto.model.sounds.SoundControlTest]/[feature:$spock_feature_0_13]</span></span> removed call to com/l12gr05/projeto/model/sounds/SoundTrack::stop &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@e08853d_90'>90</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_90'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>stopAll<br/><b>Killed by : </b>com.l12gr05.projeto.model.sounds.SoundControlTest.[engine:spock]/[spec:com.l12gr05.projeto.model.sounds.SoundControlTest]/[feature:$spock_feature_0_13]</span></span> removed call to com/l12gr05/projeto/model/sounds/SoundTrack::stop &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@e08853d_91'>91</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_91'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>stopAll<br/><b>Killed by : </b>com.l12gr05.projeto.model.sounds.SoundControlTest.[engine:spock]/[spec:com.l12gr05.projeto.model.sounds.SoundControlTest]/[feature:$spock_feature_0_13]</span></span> removed call to com/l12gr05/projeto/model/sounds/SoundTrack::stop &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@e08853d_92'>92</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@e08853d_92'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>stopAll<br/><b>Killed by : </b>com.l12gr05.projeto.model.sounds.SoundControlTest.[engine:spock]/[spec:com.l12gr05.projeto.model.sounds.SoundControlTest]/[feature:$spock_feature_0_13]</span></span> removed call to com/l12gr05/projeto/model/sounds/SoundTrack::stop &rarr; KILLED</p> 
+</td>
+</tr>
+
+</table>
+
+
+<h2>Active mutators</h2>
+<ul>
+
+<li class='mutator'>BOOLEAN_FALSE_RETURN</li>
+
+<li class='mutator'>BOOLEAN_TRUE_RETURN</li>
+
+<li class='mutator'>CONDITIONALS_BOUNDARY_MUTATOR</li>
+
+<li class='mutator'>EMPTY_RETURN_VALUES</li>
+
+<li class='mutator'>INCREMENTS_MUTATOR</li>
+
+<li class='mutator'>INVERT_NEGS_MUTATOR</li>
+
+<li class='mutator'>MATH_MUTATOR</li>
+
+<li class='mutator'>NEGATE_CONDITIONALS_MUTATOR</li>
+
+<li class='mutator'>NULL_RETURN_VALUES</li>
+
+<li class='mutator'>PRIMITIVE_RETURN_VALS_MUTATOR</li>
+
+<li class='mutator'>VOID_METHOD_CALL_MUTATOR</li>
+
+</ul>
+
+<h2>Tests examined</h2>
+<ul>
+<li>com.l12gr05.projeto.model.sounds.SoundControlTest.[engine:spock]/[spec:com.l12gr05.projeto.model.sounds.SoundControlTest]/[feature:$spock_feature_0_1] (2 ms)</li><li>com.l12gr05.projeto.controller.Menu.InstructionControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Menu.InstructionControllerTest]/[feature:$spock_feature_0_1] (4 ms)</li><li>com.l12gr05.projeto.controller.Game.ArenaControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.ArenaControllerTest]/[feature:$spock_feature_0_8] (8 ms)</li><li>com.l12gr05.projeto.controller.Menu.InstructionControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Menu.InstructionControllerTest]/[feature:$spock_feature_0_3] (3 ms)</li><li>com.l12gr05.projeto.model.sounds.SoundControlTest.[engine:spock]/[spec:com.l12gr05.projeto.model.sounds.SoundControlTest]/[feature:$spock_feature_0_5] (3 ms)</li><li>com.l12gr05.projeto.model.sounds.SoundControlTest.[engine:spock]/[spec:com.l12gr05.projeto.model.sounds.SoundControlTest]/[feature:$spock_feature_0_3] (4 ms)</li><li>com.l12gr05.projeto.model.sounds.SoundControlTest.[engine:spock]/[spec:com.l12gr05.projeto.model.sounds.SoundControlTest]/[feature:$spock_feature_0_9] (4 ms)</li><li>com.l12gr05.projeto.controller.Menu.WinControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Menu.WinControllerTest]/[feature:$spock_feature_0_6] (4 ms)</li><li>com.l12gr05.projeto.controller.Game.ArenaControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.ArenaControllerTest]/[feature:$spock_feature_0_24] (9 ms)</li><li>com.l12gr05.projeto.model.sounds.SoundControlTest.[engine:spock]/[spec:com.l12gr05.projeto.model.sounds.SoundControlTest]/[feature:$spock_feature_0_7] (2 ms)</li><li>com.l12gr05.projeto.controller.Menu.WinControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Menu.WinControllerTest]/[feature:$spock_feature_0_4] (4 ms)</li><li>com.l12gr05.projeto.controller.Game.ArenaControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.ArenaControllerTest]/[feature:$spock_feature_0_22] (16 ms)</li><li>com.l12gr05.projeto.controller.Game.ArenaControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.ArenaControllerTest]/[feature:$spock_feature_0_20] (13 ms)</li><li>com.l12gr05.projeto.controller.Menu.PauseControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Menu.PauseControllerTest]/[feature:$spock_feature_0_6] (8 ms)</li><li>com.l12gr05.projeto.controller.Menu.LoseControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Menu.LoseControllerTest]/[feature:$spock_feature_0_2] (8 ms)</li><li>com.l12gr05.projeto.controller.Menu.MenuControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Menu.MenuControllerTest]/[feature:$spock_feature_0_1] (5 ms)</li><li>com.l12gr05.projeto.controller.Menu.LoseControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Menu.LoseControllerTest]/[feature:$spock_feature_0_4] (6 ms)</li><li>com.l12gr05.projeto.controller.Menu.MenuControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Menu.MenuControllerTest]/[feature:$spock_feature_0_3] (7 ms)</li><li>com.l12gr05.projeto.controller.Game.BulletControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.BulletControllerTest]/[feature:$spock_feature_0_14] (6 ms)</li><li>com.l12gr05.projeto.controller.Menu.MenuControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Menu.MenuControllerTest]/[feature:$spock_feature_0_5] (4 ms)</li><li>com.l12gr05.projeto.controller.Menu.LoseControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Menu.LoseControllerTest]/[feature:$spock_feature_0_0] (5 ms)</li><li>com.l12gr05.projeto.controller.Menu.MenuControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Menu.MenuControllerTest]/[feature:$spock_feature_0_7] (5 ms)</li><li>com.l12gr05.projeto.controller.Menu.LoseControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Menu.LoseControllerTest]/[feature:$spock_feature_0_6] (5 ms)</li><li>com.l12gr05.projeto.controller.Menu.LoseControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Menu.LoseControllerTest]/[feature:$spock_feature_0_8] (5 ms)</li><li>com.l12gr05.projeto.controller.Game.HeroControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.HeroControllerTest]/[feature:$spock_feature_0_10] (8 ms)</li><li>com.l12gr05.projeto.controller.Game.EnemyControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.EnemyControllerTest]/[feature:$spock_feature_0_5] (6 ms)</li><li>com.l12gr05.projeto.controller.Game.EnemyControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.EnemyControllerTest]/[feature:$spock_feature_0_7] (7 ms)</li><li>com.l12gr05.projeto.controller.Game.ArenaControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.ArenaControllerTest]/[feature:$spock_feature_0_18] (8 ms)</li><li>com.l12gr05.projeto.controller.Game.HeroControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.HeroControllerTest]/[feature:$spock_feature_0_12] (5 ms)</li><li>com.l12gr05.projeto.controller.Game.ArenaControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.ArenaControllerTest]/[feature:$spock_feature_0_16] (8 ms)</li><li>com.l12gr05.projeto.controller.Game.EnemyControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.EnemyControllerTest]/[feature:$spock_feature_0_3] (7 ms)</li><li>com.l12gr05.projeto.model.sounds.SoundControlTest.[engine:spock]/[spec:com.l12gr05.projeto.model.sounds.SoundControlTest]/[feature:$spock_feature_0_11] (4 ms)</li><li>com.l12gr05.projeto.controller.Game.HeroControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.HeroControllerTest]/[feature:$spock_feature_0_4] (6 ms)</li><li>com.l12gr05.projeto.controller.Game.HeroControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.HeroControllerTest]/[feature:$spock_feature_0_2] (7 ms)</li><li>com.l12gr05.projeto.controller.Game.EnemyControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.EnemyControllerTest]/[feature:$spock_feature_0_14] (8 ms)</li><li>com.l12gr05.projeto.controller.Game.EnemyControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.EnemyControllerTest]/[feature:$spock_feature_0_16] (7 ms)</li><li>com.l12gr05.projeto.state.LoseStateTest.[engine:spock]/[spec:com.l12gr05.projeto.state.LoseStateTest]/[feature:$spock_feature_0_0] (2 ms)</li><li>com.l12gr05.projeto.state.MenuStateTest.[engine:spock]/[spec:com.l12gr05.projeto.state.MenuStateTest]/[feature:$spock_feature_0_1] (3 ms)</li><li>com.l12gr05.projeto.model.sounds.SoundControlTest.[engine:spock]/[spec:com.l12gr05.projeto.model.sounds.SoundControlTest]/[feature:$spock_feature_0_13] (3 ms)</li><li>com.l12gr05.projeto.controller.Menu.AddLeaderboardControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Menu.AddLeaderboardControllerTest]/[feature:$spock_feature_0_2] (6 ms)</li><li>com.l12gr05.projeto.controller.Game.EnemyControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.EnemyControllerTest]/[feature:$spock_feature_0_9] (6 ms)</li><li>com.l12gr05.projeto.controller.Game.HeroControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.HeroControllerTest]/[feature:$spock_feature_0_14] (4 ms)</li><li>com.l12gr05.projeto.controller.Menu.LeaderboardControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Menu.LeaderboardControllerTest]/[feature:$spock_feature_0_1] (4 ms)</li><li>com.l12gr05.projeto.controller.Menu.PauseControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Menu.PauseControllerTest]/[feature:$spock_feature_0_3] (5 ms)</li><li>com.l12gr05.projeto.model.sounds.SoundControlTest.[engine:spock]/[spec:com.l12gr05.projeto.model.sounds.SoundControlTest]/[feature:$spock_feature_0_2] (2 ms)</li><li>com.l12gr05.projeto.controller.Game.ArenaControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.ArenaControllerTest]/[feature:$spock_feature_0_7] (8 ms)</li><li>com.l12gr05.projeto.model.sounds.SoundControlTest.[engine:spock]/[spec:com.l12gr05.projeto.model.sounds.SoundControlTest]/[feature:$spock_feature_0_0] (40 ms)</li><li>com.l12gr05.projeto.controller.Game.ArenaControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.ArenaControllerTest]/[feature:$spock_feature_0_5] (13 ms)</li><li>com.l12gr05.projeto.controller.Menu.LeaderboardControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Menu.LeaderboardControllerTest]/[feature:$spock_feature_0_5] (5 ms)</li><li>com.l12gr05.projeto.model.sounds.SoundControlTest.[engine:spock]/[spec:com.l12gr05.projeto.model.sounds.SoundControlTest]/[feature:$spock_feature_0_6] (3 ms)</li><li>com.l12gr05.projeto.model.sounds.SoundControlTest.[engine:spock]/[spec:com.l12gr05.projeto.model.sounds.SoundControlTest]/[feature:$spock_feature_0_4] (3 ms)</li><li>com.l12gr05.projeto.controller.Menu.MenuControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Menu.MenuControllerTest]/[feature:$spock_feature_0_8] (5 ms)</li><li>com.l12gr05.projeto.controller.Game.ArenaControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.ArenaControllerTest]/[feature:$spock_feature_0_23] (10 ms)</li><li>com.l12gr05.projeto.controller.Game.ArenaControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.ArenaControllerTest]/[feature:$spock_feature_0_21] (9 ms)</li><li>com.l12gr05.projeto.model.sounds.SoundControlTest.[engine:spock]/[spec:com.l12gr05.projeto.model.sounds.SoundControlTest]/[feature:$spock_feature_0_8] (3 ms)</li><li>com.l12gr05.projeto.controller.Menu.PauseControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Menu.PauseControllerTest]/[feature:$spock_feature_0_7] (5 ms)</li><li>com.l12gr05.projeto.controller.Menu.WinControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Menu.WinControllerTest]/[feature:$spock_feature_0_1] (3 ms)</li><li>com.l12gr05.projeto.controller.Menu.LoseControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Menu.LoseControllerTest]/[feature:$spock_feature_0_3] (6 ms)</li><li>com.l12gr05.projeto.controller.Menu.MenuControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Menu.MenuControllerTest]/[feature:$spock_feature_0_2] (6 ms)</li><li>com.l12gr05.projeto.controller.Menu.LoseControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Menu.LoseControllerTest]/[feature:$spock_feature_0_5] (4 ms)</li><li>com.l12gr05.projeto.controller.Menu.MenuControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Menu.MenuControllerTest]/[feature:$spock_feature_0_4] (7 ms)</li><li>com.l12gr05.projeto.controller.Game.BulletControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.BulletControllerTest]/[feature:$spock_feature_0_13] (7 ms)</li><li>com.l12gr05.projeto.controller.Menu.MenuControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Menu.MenuControllerTest]/[feature:$spock_feature_0_6] (4 ms)</li><li>com.l12gr05.projeto.controller.Menu.LoseControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Menu.LoseControllerTest]/[feature:$spock_feature_0_1] (5 ms)</li><li>com.l12gr05.projeto.controller.Menu.WinControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Menu.WinControllerTest]/[feature:$spock_feature_0_7] (3 ms)</li><li>com.l12gr05.projeto.controller.Game.BulletControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.BulletControllerTest]/[feature:$spock_feature_0_15] (8 ms)</li><li>com.l12gr05.projeto.controller.Menu.LoseControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Menu.LoseControllerTest]/[feature:$spock_feature_0_7] (6 ms)</li><li>com.l12gr05.projeto.controller.Menu.MenuControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Menu.MenuControllerTest]/[feature:$spock_feature_0_0] (5 ms)</li><li>com.l12gr05.projeto.controller.Game.EnemyControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.EnemyControllerTest]/[feature:$spock_feature_0_4] (10 ms)</li><li>com.l12gr05.projeto.controller.Game.EnemyControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.EnemyControllerTest]/[feature:$spock_feature_0_6] (7 ms)</li><li>com.l12gr05.projeto.controller.Game.ArenaControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.ArenaControllerTest]/[feature:$spock_feature_0_19] (8 ms)</li><li>com.l12gr05.projeto.controller.Game.HeroControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.HeroControllerTest]/[feature:$spock_feature_0_11] (6 ms)</li><li>com.l12gr05.projeto.controller.Game.ArenaControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.ArenaControllerTest]/[feature:$spock_feature_0_17] (10 ms)</li><li>com.l12gr05.projeto.controller.Game.EnemyControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.EnemyControllerTest]/[feature:$spock_feature_0_2] (9 ms)</li><li>com.l12gr05.projeto.controller.Game.ArenaControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.ArenaControllerTest]/[feature:$spock_feature_0_15] (8 ms)</li><li>com.l12gr05.projeto.model.sounds.SoundControlTest.[engine:spock]/[spec:com.l12gr05.projeto.model.sounds.SoundControlTest]/[feature:$spock_feature_0_10] (3 ms)</li><li>com.l12gr05.projeto.controller.Game.HeroControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.HeroControllerTest]/[feature:$spock_feature_0_5] (5 ms)</li><li>com.l12gr05.projeto.controller.Game.EnemyControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.EnemyControllerTest]/[feature:$spock_feature_0_13] (7 ms)</li><li>com.l12gr05.projeto.controller.Game.HeroControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.HeroControllerTest]/[feature:$spock_feature_0_3] (5 ms)</li><li>com.l12gr05.projeto.controller.Game.HeroControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.HeroControllerTest]/[feature:$spock_feature_0_1] (6 ms)</li><li>com.l12gr05.projeto.controller.Game.EnemyControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.EnemyControllerTest]/[feature:$spock_feature_0_15] (10 ms)</li><li>com.l12gr05.projeto.PlayerTest.[engine:spock]/[spec:com.l12gr05.projeto.PlayerTest]/[feature:$spock_feature_0_0] (11 ms)</li><li>com.l12gr05.projeto.state.LoseStateTest.[engine:spock]/[spec:com.l12gr05.projeto.state.LoseStateTest]/[feature:$spock_feature_0_1] (2 ms)</li><li>com.l12gr05.projeto.state.MenuStateTest.[engine:spock]/[spec:com.l12gr05.projeto.state.MenuStateTest]/[feature:$spock_feature_0_0] (2 ms)</li><li>com.l12gr05.projeto.model.sounds.SoundControlTest.[engine:spock]/[spec:com.l12gr05.projeto.model.sounds.SoundControlTest]/[feature:$spock_feature_0_12] (2 ms)</li><li>com.l12gr05.projeto.controller.Game.HeroControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.HeroControllerTest]/[feature:$spock_feature_0_13] (4 ms)</li><li>com.l12gr05.projeto.controller.Game.EnemyControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.EnemyControllerTest]/[feature:$spock_feature_0_8] (7 ms)</li><li>com.l12gr05.projeto.controller.Game.HeroControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.HeroControllerTest]/[feature:$spock_feature_0_15] (4 ms)</li>
+</ul>
+
+<br/>
+
+Report generated by <a href='http://pitest.org'>PIT</a> 1.6.7
+
+</body>
+</html>

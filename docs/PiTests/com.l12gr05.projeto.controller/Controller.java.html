@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+
+
+<h1>Controller.java</h1>
+
+<table class="src">
+
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec53257_1'/>
+1
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec53257_1'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>package com.l12gr05.projeto.controller;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec53257_2'/>
+2
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec53257_2'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec53257_3'/>
+3
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec53257_3'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import com.l12gr05.projeto.Game;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec53257_4'/>
+4
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec53257_4'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import com.googlecode.lanterna.input.KeyStroke;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec53257_5'/>
+5
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec53257_5'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec53257_6'/>
+6
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec53257_6'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.io.IOException;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec53257_7'/>
+7
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec53257_7'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec53257_8'/>
+8
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec53257_8'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>public abstract class Controller&#60;T&#62; {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec53257_9'/>
+9
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec53257_9'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    private final T model;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec53257_10'/>
+10
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec53257_10'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec53257_11'/>
+11
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec53257_11'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    public Controller(T model) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec53257_12'/>
+12
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec53257_12'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        this.model = model;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec53257_13'/>
+13
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec53257_13'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec53257_14'/>
+14
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec53257_14'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec53257_15'/>
+15
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec53257_15'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public T getModel() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec53257_16'/>
+16
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec53257_16'>1</a>
+<span>
+
+1. getModel : replaced return value with null for com/l12gr05/projeto/controller/Controller::getModel &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return model;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec53257_17'/>
+17
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec53257_17'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec53257_18'/>
+18
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec53257_18'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec53257_19'/>
+19
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec53257_19'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public abstract void step(Game game, KeyStroke key, long time) throws IOException;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec53257_20'/>
+20
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec53257_20'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>}</span></pre></td></tr>
+
+
+
+<tr><td></td><td></td><td><h2>Mutations</h2></td></tr>
+
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1ec53257_16'>16</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1ec53257_16'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getModel<br/><b>Killed by : </b>com.l12gr05.projeto.state.AddLeaderboardStateTest.[engine:spock]/[spec:com.l12gr05.projeto.state.AddLeaderboardStateTest]/[feature:$spock_feature_0_1]</span></span> replaced return value with null for com/l12gr05/projeto/controller/Controller::getModel &rarr; KILLED</p> 
+</td>
+</tr>
+
+</table>
+
+
+<h2>Active mutators</h2>
+<ul>
+
+<li class='mutator'>BOOLEAN_FALSE_RETURN</li>
+
+<li class='mutator'>BOOLEAN_TRUE_RETURN</li>
+
+<li class='mutator'>CONDITIONALS_BOUNDARY_MUTATOR</li>
+
+<li class='mutator'>EMPTY_RETURN_VALUES</li>
+
+<li class='mutator'>INCREMENTS_MUTATOR</li>
+
+<li class='mutator'>INVERT_NEGS_MUTATOR</li>
+
+<li class='mutator'>MATH_MUTATOR</li>
+
+<li class='mutator'>NEGATE_CONDITIONALS_MUTATOR</li>
+
+<li class='mutator'>NULL_RETURN_VALUES</li>
+
+<li class='mutator'>PRIMITIVE_RETURN_VALS_MUTATOR</li>
+
+<li class='mutator'>VOID_METHOD_CALL_MUTATOR</li>
+
+</ul>
+
+<h2>Tests examined</h2>
+<ul>
+<li>com.l12gr05.projeto.controller.Game.ArenaControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.ArenaControllerTest]/[feature:$spock_feature_0_6] (8 ms)</li><li>com.l12gr05.projeto.controller.Menu.PauseControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Menu.PauseControllerTest]/[feature:$spock_feature_0_2] (8 ms)</li><li>com.l12gr05.projeto.state.PauseStateTest.[engine:spock]/[spec:com.l12gr05.projeto.state.PauseStateTest]/[feature:$spock_feature_0_1] (3 ms)</li><li>com.l12gr05.projeto.controller.Game.ArenaControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.ArenaControllerTest]/[feature:$spock_feature_0_2] (12 ms)</li><li>com.l12gr05.projeto.controller.Menu.WinControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Menu.WinControllerTest]/[feature:$spock_feature_0_6] (4 ms)</li><li>com.l12gr05.projeto.controller.Game.ArenaControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.ArenaControllerTest]/[feature:$spock_feature_0_22] (16 ms)</li><li>com.l12gr05.projeto.controller.Menu.WinControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Menu.WinControllerTest]/[feature:$spock_feature_0_2] (3 ms)</li><li>com.l12gr05.projeto.controller.Menu.LoseControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Menu.LoseControllerTest]/[feature:$spock_feature_0_4] (6 ms)</li><li>com.l12gr05.projeto.controller.Menu.MenuControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Menu.MenuControllerTest]/[feature:$spock_feature_0_3] (7 ms)</li><li>com.l12gr05.projeto.state.InstructionsStateTest.[engine:spock]/[spec:com.l12gr05.projeto.state.InstructionsStateTest]/[feature:$spock_feature_0_1] (2 ms)</li><li>com.l12gr05.projeto.controller.Menu.MenuControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Menu.MenuControllerTest]/[feature:$spock_feature_0_7] (5 ms)</li><li>com.l12gr05.projeto.controller.Game.BulletControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.BulletControllerTest]/[feature:$spock_feature_0_10] (8 ms)</li><li>com.l12gr05.projeto.controller.Menu.LoseControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Menu.LoseControllerTest]/[feature:$spock_feature_0_8] (5 ms)</li><li>com.l12gr05.projeto.controller.Game.HeroControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.HeroControllerTest]/[feature:$spock_feature_0_10] (8 ms)</li><li>com.l12gr05.projeto.controller.Game.BulletControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.BulletControllerTest]/[feature:$spock_feature_0_3] (6 ms)</li><li>com.l12gr05.projeto.controller.Game.EnemyControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.EnemyControllerTest]/[feature:$spock_feature_0_5] (6 ms)</li><li>com.l12gr05.projeto.controller.Game.ArenaControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.ArenaControllerTest]/[feature:$spock_feature_0_18] (8 ms)</li><li>com.l12gr05.projeto.controller.Game.EnemyControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.EnemyControllerTest]/[feature:$spock_feature_0_12] (9 ms)</li><li>com.l12gr05.projeto.controller.Game.BulletControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.BulletControllerTest]/[feature:$spock_feature_0_7] (7 ms)</li><li>com.l12gr05.projeto.controller.Game.EnemyControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.EnemyControllerTest]/[feature:$spock_feature_0_1] (6 ms)</li><li>com.l12gr05.projeto.controller.Game.ArenaControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.ArenaControllerTest]/[feature:$spock_feature_0_14] (7 ms)</li><li>com.l12gr05.projeto.controller.Game.HeroControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.HeroControllerTest]/[feature:$spock_feature_0_6] (5 ms)</li><li>com.l12gr05.projeto.controller.Game.HeroControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.HeroControllerTest]/[feature:$spock_feature_0_2] (7 ms)</li><li>com.l12gr05.projeto.controller.Game.EnemyControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.EnemyControllerTest]/[feature:$spock_feature_0_16] (7 ms)</li><li>com.l12gr05.projeto.controller.Menu.AddLeaderboardControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Menu.AddLeaderboardControllerTest]/[feature:$spock_feature_0_2] (6 ms)</li><li>com.l12gr05.projeto.controller.Game.HeroControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.HeroControllerTest]/[feature:$spock_feature_0_18] (6 ms)</li><li>com.l12gr05.projeto.controller.Game.EnemyControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.EnemyControllerTest]/[feature:$spock_feature_0_9] (6 ms)</li><li>com.l12gr05.projeto.controller.Game.HeroControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.HeroControllerTest]/[feature:$spock_feature_0_14] (4 ms)</li><li>com.l12gr05.projeto.state.AddLeaderboardStateTest.[engine:spock]/[spec:com.l12gr05.projeto.state.AddLeaderboardStateTest]/[feature:$spock_feature_0_1] (2 ms)</li><li>com.l12gr05.projeto.controller.Menu.LeaderboardControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Menu.LeaderboardControllerTest]/[feature:$spock_feature_0_1] (4 ms)</li><li>com.l12gr05.projeto.controller.Menu.PauseControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Menu.PauseControllerTest]/[feature:$spock_feature_0_3] (5 ms)</li><li>com.l12gr05.projeto.controller.Game.ArenaControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.ArenaControllerTest]/[feature:$spock_feature_0_7] (8 ms)</li><li>com.l12gr05.projeto.controller.Game.ArenaControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.ArenaControllerTest]/[feature:$spock_feature_0_3] (8 ms)</li><li>com.l12gr05.projeto.controller.Game.ArenaControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.ArenaControllerTest]/[feature:$spock_feature_0_21] (9 ms)</li><li>com.l12gr05.projeto.controller.Menu.WinControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Menu.WinControllerTest]/[feature:$spock_feature_0_3] (6 ms)</li><li>com.l12gr05.projeto.controller.Menu.LoseControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Menu.LoseControllerTest]/[feature:$spock_feature_0_3] (6 ms)</li><li>com.l12gr05.projeto.controller.Menu.MenuControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Menu.MenuControllerTest]/[feature:$spock_feature_0_2] (6 ms)</li><li>com.l12gr05.projeto.controller.Menu.WinControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Menu.WinControllerTest]/[feature:$spock_feature_0_7] (3 ms)</li><li>com.l12gr05.projeto.controller.Game.BulletControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.BulletControllerTest]/[feature:$spock_feature_0_15] (8 ms)</li><li>com.l12gr05.projeto.controller.Game.BulletControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.BulletControllerTest]/[feature:$spock_feature_0_8] (6 ms)</li><li>com.l12gr05.projeto.controller.Game.BulletControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.BulletControllerTest]/[feature:$spock_feature_0_11] (10 ms)</li><li>com.l12gr05.projeto.controller.Menu.LoseControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Menu.LoseControllerTest]/[feature:$spock_feature_0_7] (6 ms)</li><li>com.l12gr05.projeto.controller.Game.EnemyControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.EnemyControllerTest]/[feature:$spock_feature_0_4] (10 ms)</li><li>com.l12gr05.projeto.controller.Game.EnemyControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.EnemyControllerTest]/[feature:$spock_feature_0_11] (8 ms)</li><li>com.l12gr05.projeto.controller.Game.BulletControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.BulletControllerTest]/[feature:$spock_feature_0_0] (9 ms)</li><li>com.l12gr05.projeto.controller.Game.ArenaControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.ArenaControllerTest]/[feature:$spock_feature_0_17] (10 ms)</li><li>com.l12gr05.projeto.controller.Game.EnemyControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.EnemyControllerTest]/[feature:$spock_feature_0_0] (9 ms)</li><li>com.l12gr05.projeto.controller.Game.BulletControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.BulletControllerTest]/[feature:$spock_feature_0_4] (6 ms)</li><li>com.l12gr05.projeto.controller.Game.HeroControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.HeroControllerTest]/[feature:$spock_feature_0_7] (6 ms)</li><li>com.l12gr05.projeto.controller.Game.ArenaControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.ArenaControllerTest]/[feature:$spock_feature_0_13] (9 ms)</li><li>com.l12gr05.projeto.controller.Game.EnemyControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.EnemyControllerTest]/[feature:$spock_feature_0_19] (12 ms)</li><li>com.l12gr05.projeto.controller.Game.HeroControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.HeroControllerTest]/[feature:$spock_feature_0_3] (5 ms)</li><li>com.l12gr05.projeto.controller.Game.EnemyControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.EnemyControllerTest]/[feature:$spock_feature_0_15] (10 ms)</li><li>com.l12gr05.projeto.PlayerTest.[engine:spock]/[spec:com.l12gr05.projeto.PlayerTest]/[feature:$spock_feature_0_0] (11 ms)</li><li>com.l12gr05.projeto.controller.Menu.AddLeaderboardControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Menu.AddLeaderboardControllerTest]/[feature:$spock_feature_0_3] (7 ms)</li><li>com.l12gr05.projeto.controller.Game.HeroControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.HeroControllerTest]/[feature:$spock_feature_0_17] (5 ms)</li><li>com.l12gr05.projeto.controller.Game.HeroControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.HeroControllerTest]/[feature:$spock_feature_0_13] (4 ms)</li><li>com.l12gr05.projeto.controller.Game.EnemyControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.EnemyControllerTest]/[feature:$spock_feature_0_8] (7 ms)</li><li>com.l12gr05.projeto.controller.Menu.InstructionControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Menu.InstructionControllerTest]/[feature:$spock_feature_0_1] (4 ms)</li><li>com.l12gr05.projeto.controller.Game.ArenaControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.ArenaControllerTest]/[feature:$spock_feature_0_8] (8 ms)</li><li>com.l12gr05.projeto.controller.Menu.PauseControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Menu.PauseControllerTest]/[feature:$spock_feature_0_4] (6 ms)</li><li>com.l12gr05.projeto.controller.Game.ArenaControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.ArenaControllerTest]/[feature:$spock_feature_0_4] (9 ms)</li><li>com.l12gr05.projeto.controller.Menu.LeaderboardControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Menu.LeaderboardControllerTest]/[feature:$spock_feature_0_2] (4 ms)</li><li>com.l12gr05.projeto.controller.Game.ArenaControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.ArenaControllerTest]/[feature:$spock_feature_0_24] (9 ms)</li><li>com.l12gr05.projeto.controller.Menu.PauseControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Menu.PauseControllerTest]/[feature:$spock_feature_0_8] (4 ms)</li><li>com.l12gr05.projeto.controller.Game.ArenaControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.ArenaControllerTest]/[feature:$spock_feature_0_20] (13 ms)</li><li>com.l12gr05.projeto.controller.Menu.LoseControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Menu.LoseControllerTest]/[feature:$spock_feature_0_2] (8 ms)</li><li>com.l12gr05.projeto.controller.Menu.MenuControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Menu.MenuControllerTest]/[feature:$spock_feature_0_1] (5 ms)</li><li>com.l12gr05.projeto.controller.Game.BulletControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.BulletControllerTest]/[feature:$spock_feature_0_9] (10 ms)</li><li>com.l12gr05.projeto.controller.Game.BulletControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.BulletControllerTest]/[feature:$spock_feature_0_12] (8 ms)</li><li>com.l12gr05.projeto.controller.Game.EnemyControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.EnemyControllerTest]/[feature:$spock_feature_0_10] (8 ms)</li><li>com.l12gr05.projeto.controller.Game.BulletControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.BulletControllerTest]/[feature:$spock_feature_0_1] (7 ms)</li><li>com.l12gr05.projeto.controller.Game.EnemyControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.EnemyControllerTest]/[feature:$spock_feature_0_7] (7 ms)</li><li>com.l12gr05.projeto.controller.Game.HeroControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.HeroControllerTest]/[feature:$spock_feature_0_12] (5 ms)</li><li>com.l12gr05.projeto.controller.Game.ArenaControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.ArenaControllerTest]/[feature:$spock_feature_0_16] (8 ms)</li><li>com.l12gr05.projeto.controller.Game.BulletControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.BulletControllerTest]/[feature:$spock_feature_0_5] (7 ms)</li><li>com.l12gr05.projeto.controller.Game.EnemyControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.EnemyControllerTest]/[feature:$spock_feature_0_3] (7 ms)</li><li>com.l12gr05.projeto.controller.Game.HeroControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.HeroControllerTest]/[feature:$spock_feature_0_8] (8 ms)</li><li>com.l12gr05.projeto.controller.Game.ArenaControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.ArenaControllerTest]/[feature:$spock_feature_0_12] (8 ms)</li><li>com.l12gr05.projeto.controller.Game.EnemyControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.EnemyControllerTest]/[feature:$spock_feature_0_18] (8 ms)</li><li>com.l12gr05.projeto.controller.Game.HeroControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.HeroControllerTest]/[feature:$spock_feature_0_4] (6 ms)</li><li>com.l12gr05.projeto.controller.Game.EnemyControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.EnemyControllerTest]/[feature:$spock_feature_0_14] (8 ms)</li><li>com.l12gr05.projeto.controller.Game.HeroControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.HeroControllerTest]/[feature:$spock_feature_0_0] (6 ms)</li><li>com.l12gr05.projeto.state.MenuStateTest.[engine:spock]/[spec:com.l12gr05.projeto.state.MenuStateTest]/[feature:$spock_feature_0_1] (3 ms)</li><li>com.l12gr05.projeto.controller.Menu.AddLeaderboardControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Menu.AddLeaderboardControllerTest]/[feature:$spock_feature_0_4] (6 ms)</li><li>com.l12gr05.projeto.controller.Game.HeroControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.HeroControllerTest]/[feature:$spock_feature_0_16] (7 ms)</li><li>com.l12gr05.projeto.controller.Game.EnemyControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.EnemyControllerTest]/[feature:$spock_feature_0_20] (9 ms)</li><li>com.l12gr05.projeto.controller.Menu.PauseControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Menu.PauseControllerTest]/[feature:$spock_feature_0_1] (7 ms)</li><li>com.l12gr05.projeto.controller.Game.ArenaControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.ArenaControllerTest]/[feature:$spock_feature_0_5] (13 ms)</li><li>com.l12gr05.projeto.controller.Menu.LeaderboardControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Menu.LeaderboardControllerTest]/[feature:$spock_feature_0_3] (4 ms)</li><li>com.l12gr05.projeto.controller.Game.ArenaControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.ArenaControllerTest]/[feature:$spock_feature_0_1] (13 ms)</li><li>com.l12gr05.projeto.controller.Menu.MenuControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Menu.MenuControllerTest]/[feature:$spock_feature_0_8] (5 ms)</li><li>com.l12gr05.projeto.controller.Game.ArenaControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.ArenaControllerTest]/[feature:$spock_feature_0_23] (10 ms)</li><li>com.l12gr05.projeto.controller.Menu.PauseControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Menu.PauseControllerTest]/[feature:$spock_feature_0_9] (5 ms)</li><li>com.l12gr05.projeto.controller.Menu.WinControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Menu.WinControllerTest]/[feature:$spock_feature_0_1] (3 ms)</li><li>com.l12gr05.projeto.controller.Menu.MenuControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Menu.MenuControllerTest]/[feature:$spock_feature_0_4] (7 ms)</li><li>com.l12gr05.projeto.controller.Game.ArenaControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.ArenaControllerTest]/[feature:$spock_feature_0_9] (9 ms)</li><li>com.l12gr05.projeto.controller.Game.BulletControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.BulletControllerTest]/[feature:$spock_feature_0_2] (6 ms)</li><li>com.l12gr05.projeto.controller.Game.EnemyControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.EnemyControllerTest]/[feature:$spock_feature_0_6] (7 ms)</li><li>com.l12gr05.projeto.controller.Game.ArenaControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.ArenaControllerTest]/[feature:$spock_feature_0_19] (8 ms)</li><li>com.l12gr05.projeto.controller.Game.HeroControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.HeroControllerTest]/[feature:$spock_feature_0_11] (6 ms)</li><li>com.l12gr05.projeto.state.GameStateTest.[engine:spock]/[spec:com.l12gr05.projeto.state.GameStateTest]/[feature:$spock_feature_0_1] (4 ms)</li><li>com.l12gr05.projeto.controller.Game.BulletControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.BulletControllerTest]/[feature:$spock_feature_0_6] (6 ms)</li><li>com.l12gr05.projeto.controller.Game.HeroControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.HeroControllerTest]/[feature:$spock_feature_0_9] (4 ms)</li><li>com.l12gr05.projeto.controller.Game.EnemyControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.EnemyControllerTest]/[feature:$spock_feature_0_2] (9 ms)</li><li>com.l12gr05.projeto.controller.Game.ArenaControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.ArenaControllerTest]/[feature:$spock_feature_0_15] (8 ms)</li><li>com.l12gr05.projeto.controller.Game.EnemyControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.EnemyControllerTest]/[feature:$spock_feature_0_17] (8 ms)</li><li>com.l12gr05.projeto.controller.Menu.AddLeaderboardControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Menu.AddLeaderboardControllerTest]/[feature:$spock_feature_0_5] (4 ms)</li><li>com.l12gr05.projeto.controller.Game.HeroControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.HeroControllerTest]/[feature:$spock_feature_0_5] (5 ms)</li><li>com.l12gr05.projeto.controller.Game.EnemyControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.EnemyControllerTest]/[feature:$spock_feature_0_13] (7 ms)</li><li>com.l12gr05.projeto.state.WinStateTest.[engine:spock]/[spec:com.l12gr05.projeto.state.WinStateTest]/[feature:$spock_feature_0_1] (5 ms)</li><li>com.l12gr05.projeto.state.LoseStateTest.[engine:spock]/[spec:com.l12gr05.projeto.state.LoseStateTest]/[feature:$spock_feature_0_1] (2 ms)</li><li>com.l12gr05.projeto.controller.Menu.AddLeaderboardControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Menu.AddLeaderboardControllerTest]/[feature:$spock_feature_0_1] (5 ms)</li><li>com.l12gr05.projeto.controller.Game.HeroControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.HeroControllerTest]/[feature:$spock_feature_0_19] (6 ms)</li><li>com.l12gr05.projeto.controller.Game.HeroControllerTest.[engine:spock]/[spec:com.l12gr05.projeto.controller.Game.HeroControllerTest]/[feature:$spock_feature_0_15] (4 ms)</li>
+</ul>
+
+<br/>
+
+Report generated by <a href='http://pitest.org'>PIT</a> 1.6.7
+
+</body>
+</html>
